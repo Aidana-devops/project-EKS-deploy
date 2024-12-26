@@ -24,5 +24,5 @@ This project demonstrates deploying a Dockerized application to an EKS cluster u
 3. Access the live application via the link above.
 
 ## Repository
-[GitHub Repository](https://github.com/your-username/project-name)
+[GitHub Repository](https://aidana-devops.github.io/project-EKS-deploy/)
 
