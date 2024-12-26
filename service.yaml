@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: project-eks-service
+  labels:
+    app: project-eks-deploy
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 80  # Match the containerPort from the Deployment
+    protocol: TCP
+  selector:
+    app: project-eks-deploy  # Ensure this matches the labels in `deploy.yml`
+
