@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: project-eks-deploy
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: project-eks-deploy
+  template:
+    metadata:
+      labels:
+        app: project-eks-deploy
+    spec:
+      containers:
+      - name: project-eks-container
+        image: aidanadevops2023/project-eks-deploy:latest
+        ports:
+        - containerPort: 80
+
